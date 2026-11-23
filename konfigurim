@@ -1,0 +1,9 @@
+
+@echo off
+title Kosovo Tax Model
+
+cd /d "C:\Users\Dell\Documents\Models\Kosovo-TE-Models"
+
+"C:\Program Files\R\R-4.5.1\bin\Rscript.exe" --vanilla -e "app <- source('Modules/TaxModelLauncher.R', encoding='UTF-8')$value; shiny::runApp(app, launch.browser=TRUE)"
+
+pause
